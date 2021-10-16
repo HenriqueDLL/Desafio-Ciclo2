@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Desafio 2</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="titulo">
+                <h1>ME ACHA!</h1>
+                <h6>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h6>
+            </div>
+            <div class="logo">
+                <span class="material-icons">
+                    travel_explore
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+       
+        <div class="formulario">
+            <form method="get" action="." >
+                <div class="campos">
+                    <p>CEP</p>
+                    <input id="cep" value="" type="text" placeholder="Digite seu CEP"
+                         />
+                </div>
+                <div class="campos">
+                    <p>Rua</p>
+                    <input name="rua" disabled type="text" id="rua" size="60" />
+                </div>
+                <div class="campos">
+                    <p>Bairro</p>
+                    <input name="bairro" disabled type="text" id="bairro" size="40" />
+                </div>
+                <div class="campos">
+                    <p>Cidade</p>
+                    <input name="cidade" disabled type="text" id="cidade" size="40" />
+                </div>
+                <div class="campos">
+                    <p>Estado</p>
+                    <input name="uf" disabled type="text" id="uf" size="2" />
+                </div>
+                <button class="botao" type="button" onclick="pesquisacep(cep.value)">
+                    BUSCAR
+                </button>
+
+            </form>
+        </div>
+    </main>
+    <script src="cep.js"></script>
+</body>
+
+</html>
